@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+       
+        <title img src="https://cdn-icons-png.flaticon.com/128/1/1438.png">Black Jack</title>
+       <link rel="stylesheet" href="bj.css">
+    </head>
+    <body>
+
+
+
+        
+    <div class="modal active" id="modal">
+
+        <div class="modal-header">
+    <div class="title1"><strong>WELCOME TO BLACK JACK!!</strong></div>
+    <button data-close-button class="close-button">&times;</button>
+        </div>
+
+        <div class="modal-body"><h2 class="size"><u><strong>Rules for the game:</strong></u></h2><p><br>The game has 5 chances<br>Start can be used to start the game initially and to avail next chances<br> At max you can have 3 cards in a game<br> If the sum of the card turns 21 you win!!!</p>
+        </div>
+        
+    </div>
+    <div  id="overlay" class="active"></div>
+
+
+
+
+        <script src="bj.js">
+        </script>
+        <section class="new top" width="90%" height="10%"></section>
+        <section>
+           <h1><img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/cards-6155055-5072534.png?f=webp&w=256">&nbspBLACK&nbsp JACK</h1>
+           <button id="hide" style="width: 200px;height: 60px;font-size:30px ;margin-top: -13px;" onclick="hide(this);">Start Game</button>
+           <div id="begin" class="same active"> <div id="forms">  <span><h1 class="heart" id="hearts">5</h1><img class="heartno"src="https://cdn.iconscout.com/icon/free/png-256/free-heart-56-76703.png?f=webp&w=256"></span>
+<div class="title"><h2 id="op"> Lets Start The Game!!</h2></div>
+        <h2 id="cards">Current Cards : 0</h2>
+        <h2 id="sum">Sum Of Cards:0</h2>
+        <h2 id="countt"></h2>
+        
+                    <button id="start button" onclick="start()">START GAME</button>
+        <button  class="newc "onclick="newcard()"><b>ADD CARD</b></button>
+<button id="newgame"class="two button"onclick="fun()">NEW GAME</button>
+</div></div></section>
+<section class="new" width="90%" height="10%"></section>
+
+<!--<div class="winsdiv" id="winsdiv">
+    <img src="" id="winsimg" class="winsimg">
+    <p id="winsp" class="winsp"></p>
+</div>
+<div  id="overlay" ></div>-->
+   
+
+</body></html>

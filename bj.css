@@ -1,0 +1,271 @@
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    background:url("https://w0.peakpx.com/wallpaper/311/581/HD-wallpaper-triangles-pattern-dark-samsung-abstract-texture-background-flat-polygon.jpg");
+    background-size:cover ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#ffffff;
+    text-align: center;
+    margin-top: 29px;
+    /*https://w0.peakpx.com/wallpaper/311/581/HD-wallpaper-triangles-pattern-dark-samsung-abstract-texture-background-flat-polygon.jpg
+//https://img.freepik.com/free-vector/black-blocks-frame-blank-black-background-vector_53876-67045.jpg?//w=740&t=st=1694960095~exp=1694960695~hmac=2847f9ac64fae465353be48aef2a43c2bfe8b8c6dd57e58b4fd69b639e52736f
+    /*#F5EFE7;#D8C4B6;*/
+}
+
+.heart{
+    display: inline;
+    font-size:45px;
+    text-align: right;
+  /*  margin-top: -20px;
+    margin-left: 220px;*/
+   border-bottom: 20px;
+   padding-bottom: -2px;
+}
+
+img{
+
+    aspect-ratio:initial;
+    position: relative;
+    height: 42px;
+    width: 42px;
+}
+.forms
+{
+    margin-top: 0;
+    padding-top: 0;
+   
+}
+.heartno
+{
+    margin-top: 0px;
+display:flexbox;
+justify-content: end;
+align-items: end;
+
+
+}
+
+
+h1{margin-top: 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:75px;
+    margin-bottom:31px;
+    color: #ffffff;
+    
+}
+section{
+   
+ 
+    width:92%;
+    height:80vh;
+    margin: 5px auto;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 2px solid #d4d4d2;
+  
+}
+.new{
+   /* background-color: #d4d4d2;*/
+    border: 2px solid #d4d4d2;
+   width:91%;
+   height:5vh;  
+  border-top: 10px;
+  border-top: 2px solid #d4d4d2;
+
+}
+.title
+{
+    border:2px solid #d4d4d2;
+   
+   padding: 0 5px 0 5px;
+   margin-top: 10px;
+}
+
+.same{
+    border:2px solid #d4d4d2;
+    padding: 2;
+    display:none;
+}
+div{
+
+    border:2px solid #d4d4d2;
+    border-radius: 5px;
+    padding:35px;
+    padding-top: 20px;
+    
+   
+}
+button.hide{
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 300px;
+    width: 100px;
+}
+.same.active{
+
+    transform:scale(1);
+}
+.button{
+    
+    display: flex;
+    flex-direction: row;
+   
+
+}
+button{
+    color: rgb(14, 17, 75);
+    
+    width:150px;
+    background-color:#F5EFE7;
+    border-color:#F5EFE7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 17px;
+cursor: pointer;
+padding: 4px 18px;
+padding-bottom: 3px;
+font-weight: bold;
+border-radius: 2px;
+box-shadow: 5px 5px 5px rgb(17, 49, 24);
+margin-top:4px;
+margin:4px auto;
+}
+button:hover{
+    border-color:#F5EFE7;
+    background-color:#000;
+    color: #F5EFE7;
+}
+.newc{
+    padding-left: 24px;
+}
+.two{
+    padding-left: 29px;
+}
+
+
+
+
+
+.modal
+{
+    position:fixed;/*cos want that to be fixed while scrolling*/
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);/*the center of the element to line up with the center of its parent. By moving the element back leftwards and upwards by half of its width and height respectively, you are sure that its center now aligns with the parent's center,*/
+    transition: 200ms ease-in-out;
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: 10;/*to make this appear on top of everything*/
+    background-color:rgba(255, 255, 255, .9);
+    width: 550px;
+    max-width: 60%;
+    height: 325px;
+    color: black;
+
+}
+/*.winsdiv{
+    margin: auto 0;
+    position:fixed;/*cos want that to be fixed while scrolling*/
+   /* top:50%;
+    left:50%;
+    transform: translate(-50%,-30%) scale(0) ;/*the center of the element to line up with the center of its parent. By moving the element back leftwards and upwards by half of its width and height respectively, you are sure that its center now aligns with the parent's center,*/
+  /*  transition: 200ms ease-in-out;
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: 10;/*to make this appear on top of everything*/
+  /*  background-color:rgba(255, 255, 255, .8);
+    width: 200px;
+    max-width: 60%;
+    height: 125px;
+    color: black;
+
+}
+
+.winsimg
+{
+    margin: auto 0;
+}
+
+.winsp{
+    text-align: justify;
+}
+*/
+.modal.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.modal-header
+{
+padding: 13px 7px;
+display:flex;
+justify-content: space-between;
+align-items: center;
+border: 1px solid black;
+margin: 0 -20px ;
+}
+
+.modal-header .title1
+{
+    box-sizing: border-box;
+    font-size:1.25rem;
+    font-weight: bold;
+    padding: 4px;
+    border: none;
+padding-left: 60px;
+margin-right: 10px;
+    padding-right: 0px;
+}
+.modal-header .close-button
+{
+cursor:pointer;
+border:none;
+outline:none;
+background:none;
+font-size:1.25rem;
+font-weight: bold;
+box-shadow: none;
+padding-left: -15px;
+padding-right: 7px;
+width: 20px;
+margin-right: 10px;
+margin-left: 60px;
+}
+.modal-body
+{
+    padding: 10px 15px;
+    margin: 10px -20px ;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.size{
+   font-size: 21px;
+    margin-bottom: -8px;
+    margin-top: -1px;
+}
+p{
+    font-size: 17px;
+}
+#overlay
+{
+position: fixed;
+opacity: 0;
+transition: 200ms ease-in-out;
+top:0;/*this creates a new top layer */
+left:0;
+right:0;
+bottom:0;
+background-color: rgba(0, 0, 0, .5);
+pointer-events: none;/*wn overlay is not active it makes sure that below buttons work*/
+
+}
+#overlay.active{
+    opacity:1;
+    pointer-events: all;
+}
+
+
+
