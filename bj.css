@@ -284,7 +284,26 @@ height: 420px;
         margin-right: 14px;
     }
 }
-
+@media (max-width:458px)
+{
+    .modal{
+height: 510px;
+    }
+    .modal-header .title1{
+        padding-left: 27px;
+    }
+    .modal-header .close-button{
+        margin-left: auto;
+        margin-right: 14px;
+    }
+    .new{
+        display: none;
+    }
+    section{
+        border: none;
+    }
+    
+}
 
 
 
