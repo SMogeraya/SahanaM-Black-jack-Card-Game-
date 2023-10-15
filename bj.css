@@ -271,7 +271,19 @@ pointer-events: none;/*wn overlay is not active it makes sure that below buttons
     pointer-events: all;
 }
 
-
+@media (max-width:600px)
+{
+    .modal{
+height: 440px;
+    }
+    .modal-header .title1{
+        padding-left: 27px;
+    }
+    .modal-header .close-button{
+        margin-left: auto;
+        margin-right: 14px;
+    }
+}
 
 
 
