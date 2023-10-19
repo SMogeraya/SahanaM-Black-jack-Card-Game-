@@ -1,3 +1,4 @@
+
 *,*::after,*::before{
     box-sizing: border-box;
 }
@@ -129,7 +130,7 @@ padding: 4px 18px;
 padding-bottom: 3px;
 font-weight: bold;
 border-radius: 2px;
-box-shadow: 5px 5px 5px rgb(0,0,0);
+box-shadow: 5px 5px 5px rgb(0, 3, 1);
 margin-top:4px;
 margin:4px auto;
 }
@@ -156,14 +157,14 @@ button:hover{
     left:50%;
     transform: translate(-50%,-50%) scale(0);/*the center of the element to line up with the center of its parent. By moving the element back leftwards and upwards by half of its width and height respectively, you are sure that its center now aligns with the parent's center,*/
     transition: 200ms ease-in-out;
-    border: 2px solid black;
+    border: 2px solid rgb(226, 219, 219);
     border-radius: 10px;
     z-index: 10;/*to make this appear on top of everything*/
-    background-color:rgba(255, 255, 255, .9);
+    background:url("https://w0.peakpx.com/wallpaper/311/581/HD-wallpaper-triangles-pattern-dark-samsung-abstract-texture-background-flat-polygon.jpg");
     width: 550px;
     max-width: 60%;
     height: 330px;
-    color: black;
+    color: rgb(255, 255, 255);
 
 }
 /*.winsdiv{
@@ -203,7 +204,7 @@ padding: 0 7px;
 display:flex;
 justify-content: space-between;
 align-items: center;
-border: 1px solid black;
+border: 1px solid rgb(201, 194, 194);
 margin: 0 -20px ;
 }
 
@@ -238,39 +239,20 @@ padding-right: 7px;
 width: 20px;
 margin-right: 10px;
 margin-left: 60px;
-
+color: rgb(251, 247, 243);
 }
 .modal-body
 {
     padding: 10px 15px;
     margin: 10px -20px ;
     font-weight: bold;
-    border: 1px solid black;
+    border: 1px solid rgb(178, 168, 168);
 }
 .size{
    font-size: 21px;
     margin-bottom: -8px;
     margin-top: -1px;
 }
-
-#overlay
-{
-position: fixed;
-opacity: 0;
-transition: 200ms ease-in-out;
-top:0;/*this creates a new top layer */
-left:0;
-right:0;
-bottom:0;
-background-color: rgba(0, 0, 0, .5);
-pointer-events: none;/*wn overlay is not active it makes sure that below buttons work*/
-
-}
-#overlay.active{
-    opacity:1;
-    pointer-events: all;
-}
-
 @media (max-width:600px)
 {
     .modal{
@@ -287,7 +269,7 @@ height: 420px;
 @media (max-width:458px)
 {
     .modal{
-height: 543px;
+height: 539px;
     }
     .modal-header .title1{
         padding-left: 27px;
@@ -303,10 +285,57 @@ height: 543px;
         border: none;
     }
     .hide{
-        height: 41px;
+        height: 42px;
     }
+    
+}
+#overlay
+{
+position: fixed;
+opacity: 0;
+transition: 400ms ease-in-out;
+top:0;/*this creates a new top layer */
+left:0;
+right:0;
+bottom:0;
+background-color: rgba(150, 142, 142, 0.5);
+pointer-events: none;/*wn overlay is not active it makes sure that below buttons work*/
+
+}
+#overlay.active{
+    opacity:1;
+    pointer-events: all;
 }
 
+section#page.active{
+    filter:blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
 
-
-
+#popup{
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 340px;
+    height: 340px;
+    padding:50px;
+    box-shadow: 6px 6px 35px 20px rgb(244, 224, 224);
+    background: url("https://w0.peakpx.com/wallpaper/311/581/HD-wallpaper-triangles-pattern-dark-samsung-abstract-texture-background-flat-polygon.jpg");
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#popup.active{
+    visibility: visible;
+    opacity:1;
+    transition: 0.5s;
+}
+#image{
+    width: 135px;
+    height: 130px;
+    margin-top: -12px;
+}
